@@ -14,12 +14,15 @@ class AppWidget extends StatelessWidget {
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
     ]);
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: AppColors.background),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PayFlow',
+      title: 'Pay Flow',
       theme: ThemeData(
         primarySwatch: Colors.orange,
         primaryColor: AppColors.primary,
